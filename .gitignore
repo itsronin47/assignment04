@@ -1,1 +1,4 @@
 *.csv
+*.dta
+*.DS_Store
+.Rproj.user
