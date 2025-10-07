@@ -1,0 +1,18 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{r}
+library(tidyverse)
+library(ipumsr)
+library(srvyr)
+library(haven)
+```
+
+```{r}
+ddi <- read_ipums_ddi("cps_00004.xml")
+data <- read_ipums_micro(ddi)
+glimpse(data)
+my_svy <- as_survey_design(data, weights = WTFINL)
+```

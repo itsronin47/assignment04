@@ -1,0 +1,2192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
+<codeBook ID="ddi2-e1892000-722f-013e-056f-02420a1c0304-cps_00004.dat-cps.ipums.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Codebook for an IPUMS CPS Data Extract</titl>
+        <subTitl>DDI 2.5 metadata describing the extract file  'cps_00004.dat'</subTitl>
+        <IDNo>ddi2-e1892000-722f-013e-056f-02420a1c0304-cps_00004.dat-cps.ipums.org</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2025-10-07">October 7, 2025</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>User Extract cps_00004.dat</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2025-10-07">October 7, 2025</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+      <serStmt>
+        <serName abbr="cps">IPUMS CPS</serName>
+        <serInfo>DOI:10.18128/D030.V13.0</serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2025-10-07"/>
+      </verStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <topcClas vocab="IPUMS">Technical Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Linking Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Geographic Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Economic Characteristics Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Household Constructed Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Technical Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Linking Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Demographics Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Disability Variables -- PERSON</topcClas>
+      </subject>
+      <sumDscr ID="sdatref-3014">
+        <timePrd date="2022-12" event="single">2022-12</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-3027">
+        <timePrd date="2023-12" event="single">2023-12</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-3042">
+        <timePrd date="2024-12" event="single">2024-12</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  IPUMS-CPS, December 2022
+            Density of the full data file:  0.01%
+            Density of this extract: 0.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  IPUMS-CPS, December 2023
+            Density of the full data file:  0.01%
+            Density of this extract: 0.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  IPUMS-CPS, December 2024
+            Density of the full data file:  0.01%
+            Density of this extract: 0.0%
+]]></notes>
+    </stdyInfo>
+    <dataAccs>
+      <useStmt>
+        <confDec required="no"><![CDATA[None]]></confDec>
+        <contact URI="http://cps.ipums.org/" affiliation="IPUMS">IPUMS CPS</contact>
+        <citReq><![CDATA[Publications and research reports based on the IPUMS CPS database must cite it appropriately. The citation should include the following:
+
+Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. IPUMS CPS: Version 13.0 [dataset]. Minneapolis, MN: IPUMS, 2025. https://doi.org/10.18128/D030.V13.0
+
+The licensing agreement for use of IPUMS CPS data requires that users supply us with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation. Please add your citation to the IPUMS bibliography: http://bibliography.ipums.org/]]></citReq>
+        <conditions><![CDATA[Users of IPUMS CPS data must agree to abide by the conditions of use. A user's license is valid for one year and may be renewed.  Users must agree to the following conditions:
+
+(1) No fees may be charged for use or distribution of the data.  All persons are granted a limited license to use these data, but you may not charge a fee for the data if you distribute it to others.
+
+(2) Cite IPUMS appropriately.  For information on proper citation,  refer to the citation requirement section of this DDI document.
+
+(3) Tell us about any work you do using the IPUMS.  Publications, research  reports, or presentations making use of IPUMS CPS should be added to our  Bibliography. Continued funding for the IPUMS depends on our ability to  show our sponsor agencies that researchers are using the data for productive  purposes.
+
+(4) Use it for GOOD -- never for EVIL.]]></conditions>
+        <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
+      </useStmt>
+    </dataAccs>
+  </stdyDscr>
+  <fileDscr ID="ExtractData">
+    <fileTxt>
+      <fileName>cps_00004.dat</fileName>
+      <fileCont>Microdata records</fileCont>
+      <fileStrc type="rectangular"/>
+      <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
+      <format>fixed length fields</format>
+      <filePlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</filePlac>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr><var ID="YEAR" dcml="0" files="ExtractData" intrvl="contin" name="YEAR">
+  <location EndPos="4" StartPos="1" width="4"/>
+  <labl>Survey year</labl>
+  <txt><![CDATA[YEAR reports the year in which the survey was conducted.  YEARP is repeated on person records.]]></txt>
+  <codInstr><![CDATA[CodesYEAR is a 4-digit numeric value.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SERIAL" dcml="0" files="ExtractData" intrvl="contin" name="SERIAL">
+  <location EndPos="9" StartPos="5" width="5"/>
+  <labl>Household serial number</labl>
+  <txt><![CDATA[SERIAL is an identifying number unique to each household in a given survey month and year.  All person records are assigned the same serial number as the household record they follow.  A combination of YEAR, MONTH, and SERIAL provides a within-sample unique identifier for every household in IPUMS-CPS; YEAR, MONTH, SERIAL, and PERNUM uniquely identify every person within a single sample.
+
+SERIAL is a new value generated for IPUMS-CPS and should not be confused with the household serial number created by the Census Bureau and included in the original CPS data.]]></txt>
+  <codInstr><![CDATA[CodesSERIAL is a 5-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MONTH" dcml="0" files="ExtractData" intrvl="discrete" name="MONTH">
+  <location EndPos="11" StartPos="10" width="2"/>
+  <labl>Month</labl>
+  <txt><![CDATA[MONTH indicates the calendar month of the CPS interview.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>January</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>February</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>March</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>April</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>May</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>June</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>July</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>August</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>September</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>October</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>November</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>December</labl>
+  </catgry>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HWTFINL" dcml="4" files="ExtractData" intrvl="contin" name="HWTFINL">
+  <location EndPos="21" StartPos="12" width="10"/>
+  <labl>Household weight, Basic Monthly</labl>
+  <txt><![CDATA[HWTFINL is a household-level weight that should be used to generate statistics about households. The CPS uses a complex stratified sampling scheme, and HWTFINL must be used to produce unbiased household-level statistics from IPUMS-CPS basic monthly samples. For analyses of March Annual Social and Economic (ASEC) data, researchers should use HWTSUPP (This variable was renamed. Please see this renaming scheme for more information.). For individual-level analyses, researchers should use WTFINL, WTSUPP, or EARNWT. 
+
+HWTFINL generally has the same value as WTFINL for the household head or reference person. Vacant housing units and households that could not be interviewed due to residents' absence or refusal to participate have a value of zero in HWTFINL; such sampled units were included in the public use CPS data beginning in 1988.]]></txt>
+  <codInstr><![CDATA[CodesHWTFINL is a 10-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CPSID" dcml="0" files="ExtractData" intrvl="contin" name="CPSID">
+  <location EndPos="35" StartPos="22" width="14"/>
+  <labl>CPSID, household record</labl>
+  <txt><![CDATA[CPSID is an IPUMS-CPS defined variable that uniquely identifies households across CPS samples. The first six digits of CPSID index the four-digit year and two-digit month that the household was first in the CPS. CPSID allows users to link a household record across samples, based on the 4-8-4 rotation pattern, by assigning a unique CPSID value based on a combination of household identifiers. CPSID will only ever appear for a maximum of 8 times, which is the number of times a household may be observed in the CPS survey (as indexed by MISH). In some cases, a household will appear fewer than 8 times due to migration, mortality, non-response, and recording errors. CPSID Extensive documentation about the creation of CPSID is available elsewhere.
+
+CPSID may also be used to link ASEC households that appear in the March Basic Monthly file to other months of CPS data. This linking is made possible by IPUMS through the creation of MARBASECIDH. For further information about the relationship between the March Basic and the ASEC, please see our additional documentation.
+
+Households that are part of the ASEC oversample (as indicated by ASECOVERH) may also be linked across ASEC samples, but not to the March or any other Basic Monthly sample. Note that MISH is not a reliable indicator of rotation pattern status for ASEC oversample records and should not be used to validate matches. For further information on linking records across ASEC samples, please see our additional documentation.
+
+Users may also want to see CPSIDP and CPSIDV for more information about linking individuals across time using a person-specific version of CPSID.]]></txt>
+  <codInstr><![CDATA[CodesCPSID is a 14-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Linking Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="STATEFIP" dcml="0" files="ExtractData" intrvl="discrete" name="STATEFIP">
+  <location EndPos="37" StartPos="36" width="2"/>
+  <labl>State (FIPS code)</labl>
+  <txt><![CDATA[STATEFIP identifies the household's state of residence, using the Federal Information Processing Standards (FIPS) coding scheme, which orders the states alphabetically.
+
+In 1973-1975 ASEC samples, all households in the Anaheim-Santa Ana-Garden Grove, CA METAREA are coded as Michigan-Wisconsin for STATEFIP in the original data. As there is insufficient geographic information in the public use data to determine which variable is in error, this mistake has been left un-recoded.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Alabama</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Alaska</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Arizona</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Arkansas</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>California</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Colorado</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Connecticut</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Delaware</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>District of Columbia</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Florida</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Georgia</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>Idaho</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>Illinois</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>Indiana</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>Iowa</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Kansas</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Kentucky</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Louisiana</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Maine</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>Maryland</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>Massachusetts</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>Michigan</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>Minnesota</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>Mississippi</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>Missouri</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Montana</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Nebraska</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>Nevada</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>New Hampshire</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>New Jersey</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>New Mexico</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>New York</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>North Carolina</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>North Dakota</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>Ohio</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>Oklahoma</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Oregon</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Pennsylvania</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>Rhode Island</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>South Carolina</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>South Dakota</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>Tennessee</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>Texas</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>Utah</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>Vermont</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>Washington</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>West Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>Wisconsin</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>Wyoming</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>Maine-New Hampshire-Vermont</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>Montana-Idaho-Wyoming</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>Alaska-Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>Nebraska-North Dakota-South Dakota</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>Maine-Massachusetts-New Hampshire-Rhode Island-Vermont</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>Michigan-Wisconsin</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>Minnesota-Iowa</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>Nebraska-North Dakota-South Dakota-Kansas</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>Delaware-Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>North Carolina-South Carolina</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>Alabama-Mississippi</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>Arkansas-Oklahoma</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>Arizona-New Mexico-Colorado</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>Idaho-Wyoming-Utah-Montana-Nevada</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>Alaska-Washington-Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>New Hampshire-Maine-Vermont-Rhode Island</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>South Carolina-Georgia</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>Kentucky-Tennessee</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>Arkansas-Louisiana-Oklahoma</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>Iowa-N Dakota-S Dakota-Nebraska-Kansas-Minnesota-Missouri</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>Washington-Oregon-Alaska-Hawaii</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>Montana-Wyoming-Colorado-New Mexico-Utah-Nevada-Arizona</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>Delaware-Maryland-Virginia-West Virginia</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>State not identified</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geographic Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FAMINC" dcml="0" files="ExtractData" intrvl="discrete" name="FAMINC">
+  <location EndPos="40" StartPos="38" width="3"/>
+  <labl>Family income of householder</labl>
+  <txt><![CDATA[FAMINC reports annual family income, in categories, of all persons related to the head of household/householder. For individuals who are not part of the householder's family, FAMINC reports the value for the householder's family. 
+
+This measure includes the income of all members of the household who are 15 years of age or older.  Income includes money from jobs; net income from business, farm or rent; pensions; dividends; interest; Social Security payments; and any other monetary income received by family members.
+
+Family income is collected as part of the basic monthly survey. At the end of the monthly labor force survey, respondents are asked to choose the category that represents the total combined income during the past 12 months for all members of the householder's family. The questionnaire says that "This includes money from jobs, net income from business, farm or rent, pensions, dividends, interest, social security payments and any other money income received" by members of the householder's family who are 15 years of age or older. Available categories change over time.]]></txt>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>Under $5,000</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>Under $1,000</labl>
+  </catgry>
+  <catgry>
+    <catValu>111</catValu>
+    <labl>Under $500</labl>
+  </catgry>
+  <catgry>
+    <catValu>112</catValu>
+    <labl>$500 - 999</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>$1,000 - 1,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>121</catValu>
+    <labl>$1,000 - 1,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>122</catValu>
+    <labl>$1,500-1,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>130</catValu>
+    <labl>$2,000 - 2,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>131</catValu>
+    <labl>$2,000 - 2,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>132</catValu>
+    <labl>$2,500 - 2,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>140</catValu>
+    <labl>$3,000 - 3,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>141</catValu>
+    <labl>$3,000 - 3,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>142</catValu>
+    <labl>$3,500 - 3,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>150</catValu>
+    <labl>$4,000 - 4,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>$5,000 - 7,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>210</catValu>
+    <labl>$5,000 - 7,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>220</catValu>
+    <labl>$5,000 - 5,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>230</catValu>
+    <labl>$6,000 - 7,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>231</catValu>
+    <labl>$6,000 - 7,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>232</catValu>
+    <labl>$6,000 - 6,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>233</catValu>
+    <labl>$7,000 - 7,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>234</catValu>
+    <labl>$7,000 - 7,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>300</catValu>
+    <labl>$7,500 - 9,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>310</catValu>
+    <labl>$7,500 - 7,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>320</catValu>
+    <labl>$8,000 - 8,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>330</catValu>
+    <labl>$8,500 - 8,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>340</catValu>
+    <labl>$8,000 - 8,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>350</catValu>
+    <labl>$9,000 - 9,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>400</catValu>
+    <labl>$10,000 - 14,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>410</catValu>
+    <labl>$10,000 - 10,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>420</catValu>
+    <labl>$11,000 - 11,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>430</catValu>
+    <labl>$10,000 - 12,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>440</catValu>
+    <labl>$10,000 - 11,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>450</catValu>
+    <labl>$12,000 - 12,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>460</catValu>
+    <labl>$12,000 - 14,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>470</catValu>
+    <labl>$12,500 - 14,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>480</catValu>
+    <labl>$13,000 - 13,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>490</catValu>
+    <labl>$14,000 - 14,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>500</catValu>
+    <labl>$15,000 - 19,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>510</catValu>
+    <labl>$15,000 - 15,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>520</catValu>
+    <labl>$16,000 - 16,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>530</catValu>
+    <labl>$17,000 - 17,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>540</catValu>
+    <labl>$15,000 - 17,499</labl>
+  </catgry>
+  <catgry>
+    <catValu>550</catValu>
+    <labl>$17,500 - 19,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>560</catValu>
+    <labl>$18,000 - 19,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>600</catValu>
+    <labl>$20,000 - 24,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>700</catValu>
+    <labl>$25,000 - 49,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>710</catValu>
+    <labl>$25,000 - 29,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>720</catValu>
+    <labl>$30,000 - 34,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>730</catValu>
+    <labl>$35,000 - 39,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>740</catValu>
+    <labl>$40,000 - 49,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>800</catValu>
+    <labl>$50,000 and over</labl>
+  </catgry>
+  <catgry>
+    <catValu>810</catValu>
+    <labl>$50,000 - 74,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>820</catValu>
+    <labl>$50,000 - 59,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>830</catValu>
+    <labl>$60,000 - 74,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>840</catValu>
+    <labl>$75,000 and over</labl>
+  </catgry>
+  <catgry>
+    <catValu>841</catValu>
+    <labl>$75,000 - 99,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>842</catValu>
+    <labl>$100,000 - 149,999</labl>
+  </catgry>
+  <catgry>
+    <catValu>843</catValu>
+    <labl>$150,000 and over</labl>
+  </catgry>
+  <catgry>
+    <catValu>995</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>996</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>997</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>Blank</labl>
+  </catgry>
+  <concept vocab="IPUMS">Economic Characteristics Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="NFAMS" dcml="0" files="ExtractData" intrvl="discrete" name="NFAMS">
+  <location EndPos="42" StartPos="41" width="2"/>
+  <labl>Number of families in household</labl>
+  <txt><![CDATA[NFAMS is a constructed variable that counts the number of families within each unit. A "family" is any group of persons related by blood, adoption, or marriage. An unrelated individual is considered a separate family. Thus, a household consisting of a widow and her boarder contains two families; a household consisting of a large, multiple-generation extended family with no boarders, employees, or other non-relatives counts as a single family. 
+
+Note that NFAMS is an IPUMS-derived variable using IPUMS-derived family interrelationships. Thus NFAMS may differ from the number of families according to the Census definitions. See for example FTYPE, FAMKIND, and FAMREL for more on Census family units.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0 families (vacant unit)</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1 family or N/A</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2 families</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <concept vocab="IPUMS">Household Constructed Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSRAWSCRA" dcml="0" files="ExtractData" intrvl="discrete" name="FSRAWSCRA">
+  <location EndPos="44" StartPos="43" width="2"/>
+  <labl>Adult raw food security score</labl>
+  <txt><![CDATA[FSRAWSCRA reports the total number of affirmative answers the household provided to the 10 item household/adult food security questionnaire. This raw score is used to determine the food security of the adults in a household in the past year (FSSTATUS).
+
+Households with incomes greater than 185% of the poverty line are asked two screening questions about food insecurity and if they report no instances of food insecurity are coded as having no food insecure conditions.
+
+This variable is part of the Food Security Supplement.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>No Affirmative Responses or Did Not Pass Initial Screen</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>No response</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSSPDMORC" dcml="0" files="ExtractData" intrvl="discrete" name="FSSPDMORC">
+  <location EndPos="47" StartPos="45" width="3"/>
+  <labl>Value of additional spendings on food needed to meet weekly basic household needs (categorical)</labl>
+  <txt><![CDATA[FSSPDMORC indicates how much additional money is needed in order for the household to meet weekly basic household needs for food. This question is asked of households that indicated they were spending too little on food (FSSPDML).
+
+FSSPDMORC is a categorical recode of the continuous FSSPDMOR. In 2015, the continuous variable was discontinued from the public release data and a categorical variable was introduced. FSSPDMORC recodes all previous years to the 2015 coding scheme. FSSPDMOR will no longer be updated for new samples. 
+
+This variable is part of the Food Security Supplement.]]></txt>
+  <catgry>
+    <catValu>004</catValu>
+    <labl>$1-7</labl>
+  </catgry>
+  <catgry>
+    <catValu>010</catValu>
+    <labl>$8-14</labl>
+  </catgry>
+  <catgry>
+    <catValu>020</catValu>
+    <labl>$15-24</labl>
+  </catgry>
+  <catgry>
+    <catValu>030</catValu>
+    <labl>$25-34</labl>
+  </catgry>
+  <catgry>
+    <catValu>040</catValu>
+    <labl>$35-44</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>$45-54</labl>
+  </catgry>
+  <catgry>
+    <catValu>060</catValu>
+    <labl>$55-64</labl>
+  </catgry>
+  <catgry>
+    <catValu>070</catValu>
+    <labl>$65-74</labl>
+  </catgry>
+  <catgry>
+    <catValu>080</catValu>
+    <labl>$75-84</labl>
+  </catgry>
+  <catgry>
+    <catValu>090</catValu>
+    <labl>$85-94</labl>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>$95-104</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>$105-114</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>$115-124</labl>
+  </catgry>
+  <catgry>
+    <catValu>130</catValu>
+    <labl>$125-134</labl>
+  </catgry>
+  <catgry>
+    <catValu>140</catValu>
+    <labl>$135-144</labl>
+  </catgry>
+  <catgry>
+    <catValu>150</catValu>
+    <labl>$145-154</labl>
+  </catgry>
+  <catgry>
+    <catValu>160</catValu>
+    <labl>$155-164</labl>
+  </catgry>
+  <catgry>
+    <catValu>170</catValu>
+    <labl>$165-174</labl>
+  </catgry>
+  <catgry>
+    <catValu>180</catValu>
+    <labl>$175-184</labl>
+  </catgry>
+  <catgry>
+    <catValu>190</catValu>
+    <labl>$185-194</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>$195-204 (2011-2020: 195+)</labl>
+  </catgry>
+  <catgry>
+    <catValu>210</catValu>
+    <labl>$205-214</labl>
+  </catgry>
+  <catgry>
+    <catValu>220</catValu>
+    <labl>$215-224</labl>
+  </catgry>
+  <catgry>
+    <catValu>230</catValu>
+    <labl>$225+</labl>
+  </catgry>
+  <catgry>
+    <catValu>250</catValu>
+    <labl>$245-254</labl>
+  </catgry>
+  <catgry>
+    <catValu>270</catValu>
+    <labl>$265-274</labl>
+  </catgry>
+  <catgry>
+    <catValu>300</catValu>
+    <labl>$300+ (2022+)</labl>
+  </catgry>
+  <catgry>
+    <catValu>996</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>997</catValu>
+    <labl>Don't Know</labl>
+  </catgry>
+  <catgry>
+    <catValu>998</catValu>
+    <labl>No Response</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSSTMPVALC" dcml="0" files="ExtractData" intrvl="discrete" name="FSSTMPVALC">
+  <location EndPos="50" StartPos="48" width="3"/>
+  <labl>Value of SNAP/food stamp benefits (categorical)</labl>
+  <txt><![CDATA[FSSTMPVALC records the monthly value of SNAP or Food Stamp benefits received by the household. This question is comparable to the ASEC (or March) supplement (STAMPVAL). Only household that report receiving SNAP benefits are asked to report their benefit levels (see FSFDSTMP).
+
+FSSTMPVALC is a categorical recode of the continuous FSSTMPVAL. In 2015, the continuous variable was discontinued from the public release data and a categorical variable was introduced. FSSTMPVALC recodes all previous years to the 2015 coding scheme. FSSTMPVAL will no longer be updated for new samples. 
+
+This variable is part of the Food Security Supplement.]]></txt>
+  <catgry>
+    <catValu>000</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>004</catValu>
+    <labl>$1-7</labl>
+  </catgry>
+  <catgry>
+    <catValu>010</catValu>
+    <labl>$8-14</labl>
+  </catgry>
+  <catgry>
+    <catValu>020</catValu>
+    <labl>$15-24</labl>
+  </catgry>
+  <catgry>
+    <catValu>030</catValu>
+    <labl>$25-34</labl>
+  </catgry>
+  <catgry>
+    <catValu>040</catValu>
+    <labl>$35-44</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>$45-54</labl>
+  </catgry>
+  <catgry>
+    <catValu>060</catValu>
+    <labl>$55-64</labl>
+  </catgry>
+  <catgry>
+    <catValu>070</catValu>
+    <labl>$65-74</labl>
+  </catgry>
+  <catgry>
+    <catValu>080</catValu>
+    <labl>$75-84</labl>
+  </catgry>
+  <catgry>
+    <catValu>090</catValu>
+    <labl>$85-94</labl>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>$95-104</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>$105-114</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>$115-124</labl>
+  </catgry>
+  <catgry>
+    <catValu>130</catValu>
+    <labl>$125-134</labl>
+  </catgry>
+  <catgry>
+    <catValu>140</catValu>
+    <labl>$135-144</labl>
+  </catgry>
+  <catgry>
+    <catValu>150</catValu>
+    <labl>$145-154</labl>
+  </catgry>
+  <catgry>
+    <catValu>160</catValu>
+    <labl>$155-164</labl>
+  </catgry>
+  <catgry>
+    <catValu>170</catValu>
+    <labl>$165-174</labl>
+  </catgry>
+  <catgry>
+    <catValu>180</catValu>
+    <labl>$175-184</labl>
+  </catgry>
+  <catgry>
+    <catValu>190</catValu>
+    <labl>$185-194</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>$195-204</labl>
+  </catgry>
+  <catgry>
+    <catValu>210</catValu>
+    <labl>$205-214</labl>
+  </catgry>
+  <catgry>
+    <catValu>220</catValu>
+    <labl>$215-224</labl>
+  </catgry>
+  <catgry>
+    <catValu>230</catValu>
+    <labl>$225-234</labl>
+  </catgry>
+  <catgry>
+    <catValu>240</catValu>
+    <labl>$235-244</labl>
+  </catgry>
+  <catgry>
+    <catValu>250</catValu>
+    <labl>$245-254</labl>
+  </catgry>
+  <catgry>
+    <catValu>260</catValu>
+    <labl>$255-264</labl>
+  </catgry>
+  <catgry>
+    <catValu>270</catValu>
+    <labl>$265-274</labl>
+  </catgry>
+  <catgry>
+    <catValu>280</catValu>
+    <labl>$275-284</labl>
+  </catgry>
+  <catgry>
+    <catValu>290</catValu>
+    <labl>$285-294</labl>
+  </catgry>
+  <catgry>
+    <catValu>300</catValu>
+    <labl>$295-304</labl>
+  </catgry>
+  <catgry>
+    <catValu>310</catValu>
+    <labl>$305-314</labl>
+  </catgry>
+  <catgry>
+    <catValu>320</catValu>
+    <labl>$315-324</labl>
+  </catgry>
+  <catgry>
+    <catValu>330</catValu>
+    <labl>$325-334</labl>
+  </catgry>
+  <catgry>
+    <catValu>340</catValu>
+    <labl>$335-344</labl>
+  </catgry>
+  <catgry>
+    <catValu>350</catValu>
+    <labl>$345-354</labl>
+  </catgry>
+  <catgry>
+    <catValu>360</catValu>
+    <labl>$355-364</labl>
+  </catgry>
+  <catgry>
+    <catValu>370</catValu>
+    <labl>$365-374</labl>
+  </catgry>
+  <catgry>
+    <catValu>380</catValu>
+    <labl>$375-384</labl>
+  </catgry>
+  <catgry>
+    <catValu>390</catValu>
+    <labl>$385-394</labl>
+  </catgry>
+  <catgry>
+    <catValu>400</catValu>
+    <labl>$395-404</labl>
+  </catgry>
+  <catgry>
+    <catValu>410</catValu>
+    <labl>$405-414</labl>
+  </catgry>
+  <catgry>
+    <catValu>420</catValu>
+    <labl>$415-424</labl>
+  </catgry>
+  <catgry>
+    <catValu>430</catValu>
+    <labl>$425-434</labl>
+  </catgry>
+  <catgry>
+    <catValu>440</catValu>
+    <labl>$435-444</labl>
+  </catgry>
+  <catgry>
+    <catValu>445</catValu>
+    <labl>$445+ (1995-2010)</labl>
+  </catgry>
+  <catgry>
+    <catValu>450</catValu>
+    <labl>$445-454</labl>
+  </catgry>
+  <catgry>
+    <catValu>460</catValu>
+    <labl>$455-464</labl>
+  </catgry>
+  <catgry>
+    <catValu>470</catValu>
+    <labl>$465-474</labl>
+  </catgry>
+  <catgry>
+    <catValu>480</catValu>
+    <labl>$475-484</labl>
+  </catgry>
+  <catgry>
+    <catValu>490</catValu>
+    <labl>$485-494</labl>
+  </catgry>
+  <catgry>
+    <catValu>500</catValu>
+    <labl>$495-504</labl>
+  </catgry>
+  <catgry>
+    <catValu>510</catValu>
+    <labl>$505-514</labl>
+  </catgry>
+  <catgry>
+    <catValu>520</catValu>
+    <labl>$515-524</labl>
+  </catgry>
+  <catgry>
+    <catValu>530</catValu>
+    <labl>$525-534</labl>
+  </catgry>
+  <catgry>
+    <catValu>540</catValu>
+    <labl>$535-544</labl>
+  </catgry>
+  <catgry>
+    <catValu>550</catValu>
+    <labl>$545-554</labl>
+  </catgry>
+  <catgry>
+    <catValu>560</catValu>
+    <labl>$555-564</labl>
+  </catgry>
+  <catgry>
+    <catValu>570</catValu>
+    <labl>$565-574</labl>
+  </catgry>
+  <catgry>
+    <catValu>580</catValu>
+    <labl>$575-584</labl>
+  </catgry>
+  <catgry>
+    <catValu>590</catValu>
+    <labl>$585-594</labl>
+  </catgry>
+  <catgry>
+    <catValu>600</catValu>
+    <labl>$595-604</labl>
+  </catgry>
+  <catgry>
+    <catValu>610</catValu>
+    <labl>$605-614</labl>
+  </catgry>
+  <catgry>
+    <catValu>620</catValu>
+    <labl>$615-624</labl>
+  </catgry>
+  <catgry>
+    <catValu>630</catValu>
+    <labl>$625-634</labl>
+  </catgry>
+  <catgry>
+    <catValu>640</catValu>
+    <labl>$635-644</labl>
+  </catgry>
+  <catgry>
+    <catValu>645</catValu>
+    <labl>$645+ (2019-2020)</labl>
+  </catgry>
+  <catgry>
+    <catValu>650</catValu>
+    <labl>$645-654</labl>
+  </catgry>
+  <catgry>
+    <catValu>660</catValu>
+    <labl>$655-664</labl>
+  </catgry>
+  <catgry>
+    <catValu>665</catValu>
+    <labl>$665+ (2013)</labl>
+  </catgry>
+  <catgry>
+    <catValu>670</catValu>
+    <labl>$665-674</labl>
+  </catgry>
+  <catgry>
+    <catValu>675</catValu>
+    <labl>$675+ (2015, 2018)</labl>
+  </catgry>
+  <catgry>
+    <catValu>680</catValu>
+    <labl>$675-684</labl>
+  </catgry>
+  <catgry>
+    <catValu>685</catValu>
+    <labl>$685+ (2014)</labl>
+  </catgry>
+  <catgry>
+    <catValu>690</catValu>
+    <labl>$685-694</labl>
+  </catgry>
+  <catgry>
+    <catValu>695</catValu>
+    <labl>$695+ (2011-2012, 2016-2017)</labl>
+  </catgry>
+  <catgry>
+    <catValu>700</catValu>
+    <labl>$695-704</labl>
+  </catgry>
+  <catgry>
+    <catValu>710</catValu>
+    <labl>$705-714</labl>
+  </catgry>
+  <catgry>
+    <catValu>720</catValu>
+    <labl>$715-724</labl>
+  </catgry>
+  <catgry>
+    <catValu>730</catValu>
+    <labl>$725-734</labl>
+  </catgry>
+  <catgry>
+    <catValu>740</catValu>
+    <labl>$735-744</labl>
+  </catgry>
+  <catgry>
+    <catValu>750</catValu>
+    <labl>$745-754</labl>
+  </catgry>
+  <catgry>
+    <catValu>760</catValu>
+    <labl>$755-764</labl>
+  </catgry>
+  <catgry>
+    <catValu>770</catValu>
+    <labl>$765-774</labl>
+  </catgry>
+  <catgry>
+    <catValu>780</catValu>
+    <labl>$775-784</labl>
+  </catgry>
+  <catgry>
+    <catValu>790</catValu>
+    <labl>$785-794</labl>
+  </catgry>
+  <catgry>
+    <catValu>800</catValu>
+    <labl>$795-804</labl>
+  </catgry>
+  <catgry>
+    <catValu>810</catValu>
+    <labl>$805-814</labl>
+  </catgry>
+  <catgry>
+    <catValu>820</catValu>
+    <labl>$815-824</labl>
+  </catgry>
+  <catgry>
+    <catValu>830</catValu>
+    <labl>$825-834</labl>
+  </catgry>
+  <catgry>
+    <catValu>840</catValu>
+    <labl>$835-844</labl>
+  </catgry>
+  <catgry>
+    <catValu>850</catValu>
+    <labl>$845-854</labl>
+  </catgry>
+  <catgry>
+    <catValu>860</catValu>
+    <labl>$855-864</labl>
+  </catgry>
+  <catgry>
+    <catValu>870</catValu>
+    <labl>$865-874</labl>
+  </catgry>
+  <catgry>
+    <catValu>880</catValu>
+    <labl>$875-884</labl>
+  </catgry>
+  <catgry>
+    <catValu>890</catValu>
+    <labl>$885-894</labl>
+  </catgry>
+  <catgry>
+    <catValu>900</catValu>
+    <labl>$895+</labl>
+  </catgry>
+  <catgry>
+    <catValu>996</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>997</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>998</catValu>
+    <labl>No response/not applicable</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSTOTXPNC" dcml="0" files="ExtractData" intrvl="discrete" name="FSTOTXPNC">
+  <location EndPos="53" StartPos="51" width="3"/>
+  <labl>Total expenditures on food last week (categorical)</labl>
+  <txt><![CDATA[FSTOTXPNC indicates the total amount the household spent on food last week. 
+
+FSTOTXPNC is a categorical recode of the continuous FSTOTXPN. In 2015, the continuous variable was discontinued from the public release data and a categorical variable was introduced. FSTOTXPNC recodes all previous years to the 2015 coding scheme. FSTOTXPN will no longer be updated for new samples. 
+
+Food spending is calculated based expenditures in different stores and establishments. Households also report their usual weekly expenditures on food, which is available in FSULXPNS.
+
+This variable is part of the Food Security Supplement.]]></txt>
+  <catgry>
+    <catValu>000</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>004</catValu>
+    <labl>$1-7</labl>
+  </catgry>
+  <catgry>
+    <catValu>010</catValu>
+    <labl>$8-14</labl>
+  </catgry>
+  <catgry>
+    <catValu>020</catValu>
+    <labl>$15-24</labl>
+  </catgry>
+  <catgry>
+    <catValu>030</catValu>
+    <labl>$25-34</labl>
+  </catgry>
+  <catgry>
+    <catValu>040</catValu>
+    <labl>$35-44</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>$45-54</labl>
+  </catgry>
+  <catgry>
+    <catValu>060</catValu>
+    <labl>$55-64</labl>
+  </catgry>
+  <catgry>
+    <catValu>070</catValu>
+    <labl>$65-74</labl>
+  </catgry>
+  <catgry>
+    <catValu>080</catValu>
+    <labl>$75-84</labl>
+  </catgry>
+  <catgry>
+    <catValu>090</catValu>
+    <labl>$85-94</labl>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>$95-104</labl>
+  </catgry>
+  <catgry>
+    <catValu>110</catValu>
+    <labl>$105-114</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>$115-124</labl>
+  </catgry>
+  <catgry>
+    <catValu>130</catValu>
+    <labl>$125-134</labl>
+  </catgry>
+  <catgry>
+    <catValu>140</catValu>
+    <labl>$135-144</labl>
+  </catgry>
+  <catgry>
+    <catValu>150</catValu>
+    <labl>$145-154</labl>
+  </catgry>
+  <catgry>
+    <catValu>160</catValu>
+    <labl>$155-164</labl>
+  </catgry>
+  <catgry>
+    <catValu>170</catValu>
+    <labl>$165-174</labl>
+  </catgry>
+  <catgry>
+    <catValu>180</catValu>
+    <labl>$175-184</labl>
+  </catgry>
+  <catgry>
+    <catValu>190</catValu>
+    <labl>$185-194</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>$195-204</labl>
+  </catgry>
+  <catgry>
+    <catValu>210</catValu>
+    <labl>$205-214</labl>
+  </catgry>
+  <catgry>
+    <catValu>220</catValu>
+    <labl>$215-224</labl>
+  </catgry>
+  <catgry>
+    <catValu>230</catValu>
+    <labl>$225-234</labl>
+  </catgry>
+  <catgry>
+    <catValu>240</catValu>
+    <labl>$235-244</labl>
+  </catgry>
+  <catgry>
+    <catValu>250</catValu>
+    <labl>$245-254</labl>
+  </catgry>
+  <catgry>
+    <catValu>260</catValu>
+    <labl>$255-264</labl>
+  </catgry>
+  <catgry>
+    <catValu>270</catValu>
+    <labl>$265-274</labl>
+  </catgry>
+  <catgry>
+    <catValu>280</catValu>
+    <labl>$275-284</labl>
+  </catgry>
+  <catgry>
+    <catValu>290</catValu>
+    <labl>$285-294</labl>
+  </catgry>
+  <catgry>
+    <catValu>300</catValu>
+    <labl>$295-304</labl>
+  </catgry>
+  <catgry>
+    <catValu>310</catValu>
+    <labl>$305-314</labl>
+  </catgry>
+  <catgry>
+    <catValu>320</catValu>
+    <labl>$315-324</labl>
+  </catgry>
+  <catgry>
+    <catValu>330</catValu>
+    <labl>$325-334</labl>
+  </catgry>
+  <catgry>
+    <catValu>340</catValu>
+    <labl>$335-344</labl>
+  </catgry>
+  <catgry>
+    <catValu>350</catValu>
+    <labl>$345-354</labl>
+  </catgry>
+  <catgry>
+    <catValu>360</catValu>
+    <labl>$355-364</labl>
+  </catgry>
+  <catgry>
+    <catValu>370</catValu>
+    <labl>$365-374</labl>
+  </catgry>
+  <catgry>
+    <catValu>380</catValu>
+    <labl>$375-384</labl>
+  </catgry>
+  <catgry>
+    <catValu>390</catValu>
+    <labl>$385-394</labl>
+  </catgry>
+  <catgry>
+    <catValu>400</catValu>
+    <labl>$395-404</labl>
+  </catgry>
+  <catgry>
+    <catValu>410</catValu>
+    <labl>$405-414</labl>
+  </catgry>
+  <catgry>
+    <catValu>420</catValu>
+    <labl>$415-424</labl>
+  </catgry>
+  <catgry>
+    <catValu>430</catValu>
+    <labl>$425-434</labl>
+  </catgry>
+  <catgry>
+    <catValu>440</catValu>
+    <labl>$435-444</labl>
+  </catgry>
+  <catgry>
+    <catValu>445</catValu>
+    <labl>$445+ (2020)</labl>
+  </catgry>
+  <catgry>
+    <catValu>450</catValu>
+    <labl>$445-454</labl>
+  </catgry>
+  <catgry>
+    <catValu>460</catValu>
+    <labl>$455-464</labl>
+  </catgry>
+  <catgry>
+    <catValu>470</catValu>
+    <labl>$465-474</labl>
+  </catgry>
+  <catgry>
+    <catValu>480</catValu>
+    <labl>$475-484</labl>
+  </catgry>
+  <catgry>
+    <catValu>490</catValu>
+    <labl>$485-494</labl>
+  </catgry>
+  <catgry>
+    <catValu>495</catValu>
+    <labl>$495+ (2012)</labl>
+  </catgry>
+  <catgry>
+    <catValu>500</catValu>
+    <labl>$495-504</labl>
+  </catgry>
+  <catgry>
+    <catValu>510</catValu>
+    <labl>$495-504</labl>
+  </catgry>
+  <catgry>
+    <catValu>520</catValu>
+    <labl>$515-524</labl>
+  </catgry>
+  <catgry>
+    <catValu>530</catValu>
+    <labl>$525-534</labl>
+  </catgry>
+  <catgry>
+    <catValu>540</catValu>
+    <labl>$535-544</labl>
+  </catgry>
+  <catgry>
+    <catValu>550</catValu>
+    <labl>$545-554</labl>
+  </catgry>
+  <catgry>
+    <catValu>560</catValu>
+    <labl>$555-564</labl>
+  </catgry>
+  <catgry>
+    <catValu>565</catValu>
+    <labl>$565+ (2011)</labl>
+  </catgry>
+  <catgry>
+    <catValu>570</catValu>
+    <labl>$565-574 (2011: $565+)</labl>
+  </catgry>
+  <catgry>
+    <catValu>580</catValu>
+    <labl>$575-584</labl>
+  </catgry>
+  <catgry>
+    <catValu>590</catValu>
+    <labl>$585-594</labl>
+  </catgry>
+  <catgry>
+    <catValu>600</catValu>
+    <labl>$595+</labl>
+  </catgry>
+  <catgry>
+    <catValu>996</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>997</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>998</catValu>
+    <labl>No Response</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSRASCHM" dcml="2" files="ExtractData" intrvl="discrete" name="FSRASCHM">
+  <location EndPos="57" StartPos="54" width="4"/>
+  <labl>Household rasch food security score, 30-day</labl>
+  <txt><![CDATA[FSRASCHM records the Rasch scale scores assigned to households based on each of their responses to items in the 30-day food security questionnaire. The Rasch model was used to develop cut-offs scores for the 30-day categorical measure of food insecurity (FSSTATUSM).
+
+Note that Rasch scores are not assigned to households with zero reported food insecure conditions or to households that are screened out of the food security section of the supplement. 
+
+This variable is part of the Food Security Supplement.]]></txt>
+  <catgry>
+    <catValu>9500</catValu>
+    <labl>Raw score equals zero, no scale score</labl>
+  </catgry>
+  <catgry>
+    <catValu>9800</catValu>
+    <labl>No response</labl>
+  </catgry>
+  <catgry>
+    <catValu>9900</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSWROUTMO" dcml="0" files="ExtractData" intrvl="discrete" name="FSWROUTMO">
+  <location EndPos="59" StartPos="58" width="2"/>
+  <labl>Worried that food would run out before able to afford more during past month</labl>
+  <txt><![CDATA[FSWROUTMO indicates whether the supplement household was worried that food would run out and there would be no money to buy more food in the last 30 days. This variable is first available in 2002 and is asked only of households that reported worrying about running out of food in the past 12 months (FSWROUTY).
+
+This question is one of the 18 items used to construct the 30-day household food security scale, FSSTATUSM. Households are screened into the Food Sufficiency and Food Security section of the supplement based on income and preliminary questions on food access (see FSSCREEN for more information).]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't Know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>No Response</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSHUNGR" dcml="0" files="ExtractData" intrvl="discrete" name="FSHUNGR">
+  <location EndPos="61" StartPos="60" width="2"/>
+  <labl>Frequency with which were hungry but did not eat because no money during past year</labl>
+  <txt><![CDATA[FSHUNGR indicates how often over the past year  the respondent in the household was hungry but did not eat because there was not enough money for food. This variable is available only for households that previously indicated food distress in the past year.
+
+The two questions used to construct FSHUNGR are two of the 18 items included in the 12-month household food security scale, FSSTATUS. Only households with incomes below 185% of poverty and higher income households that indicate food access problems in response to preliminary screening questions are included in the Food Sufficiency and Food Security section of the supplement. Within this section, there are two internal screeners; and FSHUNGR is subject to the first of these screeners.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Not at all</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>At least once</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Only 1 or 2 months</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Some months but not every month</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Almost every month</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>No response</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSCUTCH" dcml="0" files="ExtractData" intrvl="discrete" name="FSCUTCH">
+  <location EndPos="63" StartPos="62" width="2"/>
+  <labl>How often cut size of child's meals because not enough money for food in past year</labl>
+  <txt><![CDATA[FSCUTCH indicates how often, if at all, the household had to cut the size of a child's meals because there wasn't enough money for food in the past 12 months. From 1998 onwards, this variable is available only for households that previously indicated food distress among children in the past year.
+
+The questions used to construct this variable are two of the 8 items included in the 12-month child food security scale, FSSTATUSC and are also used to determine household food security status FSSTATUS. Only households with incomes below 185% of poverty and higher income households that indicate food access problems in response to preliminary screening questions are included in the Food Sufficiency and Food Security section of the supplement. FSCUTCH is subject to a second internal screener.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>No, never</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>At least once</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Only 1 or 2 months</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Some months but not every month</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Almost every month</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Refused</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>No Response</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Food Security Supplement Variables -- HOUSEHOLD</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="PERNUM" dcml="0" files="ExtractData" intrvl="contin" name="PERNUM">
+  <location EndPos="65" StartPos="64" width="2"/>
+  <labl>Person number in sample unit</labl>
+  <txt><![CDATA[PERNUM numbers all persons within each household consecutively (starting with "1") in the order in which they are listed in the original CPS data.  When combined with YEAR , MONTH, and SERIAL, PERNUM uniquely identifies each person within IPUMS-CPS samples, though not across IPUMS-CPS samples.]]></txt>
+  <codInstr><![CDATA[CodesPERNUM is a 2-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="WTFINL" dcml="4" files="ExtractData" intrvl="contin" name="WTFINL">
+  <location EndPos="79" StartPos="66" width="14"/>
+  <labl>Final Basic Weight</labl>
+  <txt><![CDATA[WTFINL is the final person-level weight that should be used in analyses of basic monthly data. 
+
+When analyzing ASEC data, researchers should use the person weight ASECWT. For analyses including the variables EARNWEEK, HOURWAGE, PAIDHOUR, and UNION, researchers should use the EARNWT variable. 
+
+WTFINL is the second stage weight in CPS (see technical documentation). It is based on the inverse probability of selection into the sample and adjustments for the following factors: failure to obtain an interview; sampling within large sample units; adjustments to the known distribution of the entire population according to stage, age, sex, race, and Hispanic ethnicity; and allotting a weight of zero to populations not sampled in other monthly surveys (i.e., persons in the Hispanic oversample and members of the armed forces in ASEC samples).]]></txt>
+  <codInstr><![CDATA[CodesWTFINL is a 14-digit numeric variable with four implied decimals.  That is, 12345678901234 should be interpreted as 1234567890.1234.  The IPUMS command files automatically make the necessary adjustment, so no further adjustment is needed.]]></codInstr>
+  <concept vocab="IPUMS">Technical Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CPSIDP" dcml="0" files="ExtractData" intrvl="contin" name="CPSIDP">
+  <location EndPos="93" StartPos="80" width="14"/>
+  <labl>CPSID, person record</labl>
+  <txt><![CDATA[CPSIDP is an IPUMS CPS defined variable that uniquely identifies individuals across CPS samples. The first six digits of CPSIDP index the four-digit year and two-digit month that the household was first in the CPS. CPSIDP allows users to link a respondent appearing with a designated household roster line number (LINENO) across samples, based on the 4-8-4 rotation pattern, by assigning a unique CPSIDP value to this line number. CPSIDP will only ever appear for a maximum of 8 times, which is the number of times a household may be observed in the CPS survey (as indexed by MISH). In some cases, individuals will appear fewer than 8 times due to migration, mortality, non-response, and recording errors. Extensive documentation about the creation of CPSIDP is available elsewhere.
+
+To get started using CPSIDP, users may want to sort their data file by CPSIDP and MISH to create a person-time file.
+
+Users should note that it is important to verify CPSIDP linkages with AGE, SEX, and RACE. In some cases CPSIDP will result in erroneous links, which are due to errors in the source data. Cases with the same CPSIDP value may also have inconsistent responses across samples due to errors on the part of the respondent or in recording the response. Ultimately, it is up to the individual researcher to determine the acceptability of the linkages made using CPSIDP. IPUMS CPS also offers CPSIDV which creates linkages across months that have been validated based on demographic characteristics.
+
+CPSIDP may also be used to link ASEC respondents who are in the March Basic Monthly file to other months of CPS data. This linking is made possible by IPUMS through the creation of MARBASECIDP. For further information about the relationship between the March Basic and the ASEC, please see our additional documentation.
+
+Respondents who are part of the ASEC oversample (as indicated by ASECOVERP) may also be linked across ASEC samples, but not to the March or any other Basic Monthly sample. Note also that MISH is not a reliable indicator of rotation pattern status for ASEC oversample records and should not be used to validate matches. For further information on linking records across ASEC samples, please see our additional documentation.]]></txt>
+  <codInstr><![CDATA[CodesCPSIDP is a 14-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Linking Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="CPSIDV" dcml="0" files="ExtractData" intrvl="contin" name="CPSIDV">
+  <location EndPos="108" StartPos="94" width="15"/>
+  <labl>Validated Longitudinal Identifier</labl>
+  <txt><![CDATA[CPSIDV is an IPUMS CPS-created variable that uniquely identifies individuals across CPS samples. In addition to linking records across the CPS 4-8-4 rotation pattern, CPSIDV only makes links between those records whose SEX and RACE values do not change and whose AGE values change in expected ways over time. 
+
+CPSIDV is based on CPSIDP and so there are some structural similarities between them. The first six digits of CPSIDV are identical to CPSIDP - the four-digit year and two-digit month that the household was first in the CPS. Like CPSIDP, CPSIDV allows users to link a respondent appearing with a designated household roster line number (LINENO) across samples, based on the 4-8-4 rotation pattern. 
+
+Only records that link using CPSIDP that also have consistent race and sex values and age values that increase at least one but not more than two years over the course of the 16-month CPS rotation are linkable using CPSIDV. As a result, linkage rates using CPSIDV are slightly lower than those achieved using CPSIDP. However, linkages created with CPSIDV do not require the recommended post-linking verification steps recommended for use with CPSIDP links. Users should note that original, unharmonized values of age, sex, and race are used in the creation of CPSIDV. The procedure and validation criteria for creating CPSIDV are described in detail in A Holistic Approach to Validating Current Population Survey Panel Data. 
+
+To get started using CPSIDV, users may want to sort their data file by CPSIDV and MISH to create a person-time file. 
+
+CPSIDV may also be used to link ASEC respondents across years. This linking is made possible, in part, by IPUMS through the creation of MARBASECIDP. For further information about the relationship between the March Basic and the ASEC, please see our additional documentation. In addition, persons in the ASEC oversample (as indicated by ASECOVERP) can be linked across ASEC samples using CPSIDV. Note however, that ASEC oversample individuals cannot be linked to the March Basic or any other Basic Monthly survey using CPSIDV. Note also that MISH is not a reliable indicator of rotation pattern status for ASEC oversample records and should not be used to validate matches. For further information on linking ASEC oversamples using CPSIDV, please refer to our additional documentation.
+
+Users should take care when including the March Basic or ASEC as part of their linking. Respondents who are part of the ASEC oversample (as indicated by ASECOVERP) have a CPSIDV value of 0.]]></txt>
+  <codInstr><![CDATA[CodesCPSIDV is a 15-digit numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Linking Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SEX" dcml="0" files="ExtractData" intrvl="discrete" name="SEX">
+  <location EndPos="109" StartPos="109" width="1"/>
+  <labl>Sex</labl>
+  <txt><![CDATA[SEX gives each person's sex.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Male</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Female</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="RACE" dcml="0" files="ExtractData" intrvl="discrete" name="RACE">
+  <location EndPos="112" StartPos="110" width="3"/>
+  <labl>Race</labl>
+  <txt><![CDATA[Racial categories in the CPS have been more consistent than racial categories in the census.  Up through 2002, the number of race categories ranged from 3 (white, negro, and other) to 5 (white, black, American Indian/Eskimo/Aleut, Asian or Pacific Islander, and other).   Beginning in 2003, respondents could report more than one race, and the number of codes rose to 21, and then up to 26 codes in 2013.]]></txt>
+  <catgry>
+    <catValu>100</catValu>
+    <labl>White</labl>
+  </catgry>
+  <catgry>
+    <catValu>200</catValu>
+    <labl>Black</labl>
+  </catgry>
+  <catgry>
+    <catValu>300</catValu>
+    <labl>American Indian/Aleut/Eskimo</labl>
+  </catgry>
+  <catgry>
+    <catValu>650</catValu>
+    <labl>Asian or Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>651</catValu>
+    <labl>Asian only</labl>
+  </catgry>
+  <catgry>
+    <catValu>652</catValu>
+    <labl>Hawaiian/Pacific Islander only</labl>
+  </catgry>
+  <catgry>
+    <catValu>700</catValu>
+    <labl>Other (single) race, n.e.c.</labl>
+  </catgry>
+  <catgry>
+    <catValu>801</catValu>
+    <labl>White-Black</labl>
+  </catgry>
+  <catgry>
+    <catValu>802</catValu>
+    <labl>White-American Indian</labl>
+  </catgry>
+  <catgry>
+    <catValu>803</catValu>
+    <labl>White-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>804</catValu>
+    <labl>White-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>805</catValu>
+    <labl>Black-American Indian</labl>
+  </catgry>
+  <catgry>
+    <catValu>806</catValu>
+    <labl>Black-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>807</catValu>
+    <labl>Black-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>808</catValu>
+    <labl>American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>809</catValu>
+    <labl>Asian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>810</catValu>
+    <labl>White-Black-American Indian</labl>
+  </catgry>
+  <catgry>
+    <catValu>811</catValu>
+    <labl>White-Black-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>812</catValu>
+    <labl>White-American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>813</catValu>
+    <labl>White-Asian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>814</catValu>
+    <labl>White-Black-American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>815</catValu>
+    <labl>American Indian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>816</catValu>
+    <labl>White-Black--Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>817</catValu>
+    <labl>White-American Indian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>818</catValu>
+    <labl>Black-American Indian-Asian</labl>
+  </catgry>
+  <catgry>
+    <catValu>819</catValu>
+    <labl>White-American Indian-Asian-Hawaiian/Pacific Islander</labl>
+  </catgry>
+  <catgry>
+    <catValu>820</catValu>
+    <labl>Two or three races, unspecified</labl>
+  </catgry>
+  <catgry>
+    <catValu>830</catValu>
+    <labl>Four or five races, unspecified</labl>
+  </catgry>
+  <catgry>
+    <catValu>999</catValu>
+    <labl>Blank</labl>
+  </catgry>
+  <concept vocab="IPUMS">Demographics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="DIFFCARE" dcml="0" files="ExtractData" intrvl="discrete" name="DIFFCARE">
+  <location EndPos="113" StartPos="113" width="1"/>
+  <labl>Personal care limitation</labl>
+  <txt><![CDATA[DIFFCARE indicates whether respondents have any physical or mental health condition that makes it difficult for them to take care of their own personal needs, such as bathing, dressing, or getting around inside the home.
+
+DIFFCARE was drawn from the final CPS interview, conducted 2-5 months before the ATUS interview.
+
+For more information about difficulty variables in the CPS see DIFFANY.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>NIU</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>No personal care difficulty</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Has personal care difficulty</labl>
+  </catgry>
+  <concept vocab="IPUMS">Disability Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+</dataDscr>
+</codeBook>

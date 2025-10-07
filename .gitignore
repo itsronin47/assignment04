@@ -1,4 +1,4 @@
-*.csv
-*.dta
+*.dat
 *.DS_Store
+*.Rproj.user
 .Rproj.user
