@@ -29,7 +29,9 @@ ddi <- read_ipums_ddi("data/cps_00004.xml")
 data <- read_ipums_micro(ddi)
 
 ```
+\newpage
 
+# Graph 1
 ```{r}
 #Graph 1
 
@@ -49,6 +51,8 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
 
 ```
 
+\newpage
+# Graph 2
 ```{r}
 #Data Visualization 2: Average Family Income by State Among Wealthiest States
 avg_faminc <- data |>
@@ -64,16 +68,22 @@ ggplot(avg_faminc, aes(x = STATEFIP, y = avg_faminc)) +
   labs (
     title = "Average Family Income by State Among Wealthiest States",
     x = "State Code",
-    y = "Average Family Income"
+    y = "Average Family Income",
+     caption = "Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles,
+J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards,
+Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset]. 
+Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   )
-  
-#Written interpretation: This graph identifies the 7 wealthiest states based on average family income. Each point has the number state on top of it, so we can identify which 7 states are the wealthiest. We will use the FIPS codes of those states to inform our next visualization.
 
 ```
 
+This graph identifies the 7 wealthiest states based on average family income. Each point has the number state on top of it, so we can identify which 7 states are the wealthiest. We will use the FIPS codes of those states to inform our next visualization.
+\newpage
 
+
+# Graph 3
 ```{r}
-#Data Visualization 3: Number of Respondents in the 7 Wealthiest States with Highest Food Insecurity Score
+#Data Visualization 3: 
 rich_state_codes <- c(9, 24, 27, 33, 34, 44, 49)
 avg_fsrawscra <- data |>
   group_by(STATEFIP) |>
@@ -86,22 +96,25 @@ filter(FSRAWSCRA == 10, STATEFIP %in% rich_state_codes) |>
   mutate(STATEFIP = as.numeric(STATEFIP)) |> 
   ggplot(aes(x = factor(STATEFIP), y = FSRAWSCRA, alpha = 0.2)) +
 geom_col(fill="pink") +
-  geom_hline(yintercept = avg_fsrawscra, linetype = "dotted", color = "magenta", size = 1) +
+  geom_hline(yintercept = avg_fsrawscra, linetype = "dotted", 
+  color = "magenta", size = 1) +
   labs(
-    title = "Number of Respondents in the 7 Wealthiest States with a Food Insecurity Score of 10",
+    title = "Number of Respondents in the 7 Wealthiest States with
+    a Food Insecurity Score of 10",
     x = "State Code",
-    y = "Food Insecurity Score"
+    y = "Food Insecurity Score",
+     caption = "Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles,
+J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards,
+Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset]. 
+Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   )
 
-
-#Written interpretation: This chart shows how many respondents with food insecurity score of 10 each of the 7 wealthiest states has. The dotted line shows, by comparison, the average number of respondents with a food insecurity score of 10 across all other states in the US.
-
 ```
+This chart shows how many respondents with food insecurity score of 10 each of the 7 wealthiest states has. The dotted line shows, by comparison, the average number of respondents with a food insecurity score of 10 across all other states in the US.
+\newpage
 
-``` {r}
-#Graph 4
-#Calculating the percent of respondents who got 10 on the Food Security Score
-
+# Graph 4
+```{r}
 #Total respondents by state
 tibble1 <- data |>
 count(STATEFIP)
@@ -112,14 +125,15 @@ filter(FSRAWSCRA == 10) |>
 count(STATEFIP)
 
 #Percentages of the top 7 States
-percents <- c(0.2, 0.1, 0.3, 0.2, 0.1, 0.1, 0.05)
+percents <- c(0.002, 0.001, 0.003, 0.002, 0.001, 0.001, 0.0005)
 rich_state_codes <- c(9, 24, 27, 33, 34, 44, 49)
 
 richest_states <- data.frame(percents, rich_state_codes)
 
 ggplot(richest_states) +
 geom_line(aes(x = rich_state_codes, y = percents, color = percents)) +
-geom_text(aes(x = rich_state_codes, y = percents, label = percents), vjust = -0.5, size = 3) +
+geom_text(aes(x = rich_state_codes, y = percents,
+      label = scales::percent(percents)), vjust = -0.5, size = 3) +
   labs(
     title = "Percent of Respondents with Food Insecurity Score = 10",
     subtitle = "Among 7 Wealthiest States",
@@ -128,8 +142,9 @@ J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards,
 Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset]. 
 Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   )+
-    scale_x_continuous(breaks = rich_state_codes, labels = c("CT", "MD", "MN", "NH", "NJ", "RI", "UT"), name =  "States by their FIPS Code") +
+    scale_x_continuous(breaks = rich_state_codes, 
+    labels = c("CT", "MD", "MN", "NH", "NJ", "RI", "UT"), 
+    name =  "States by their FIPS Code") +
   scale_y_continuous(name = "Percentage of Respondents")
-
 ```
 
