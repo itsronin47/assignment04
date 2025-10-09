@@ -1,8 +1,22 @@
 ---
-output: html_document
+title: "Data Science for Public Policy"
+subtitle: "Assignment 04: Data Visualization, Quarto, and Git"
+author: "Ronin McCobb and Daniela Nagar"
+format: 
+  pdf:
+    code-line-numbers: true
+execute: 
+  warning: false
+urlcolor: blue
 editor_options: 
   chunk_output_type: console
+  
 ---
+
+\vspace{0.1in}
+
+Data Source: [IPUMS](https://www.ipums.org/)
+
 ```{r}
 library(tidyverse)
 library(ipumsr)
@@ -11,8 +25,31 @@ library(haven)
 ```
 
 ```{r}
-ddi <- read_ipums_ddi("cps_00004.xml")
+ddi <- read_ipums_ddi("data/cps_00004.xml")
 data <- read_ipums_micro(ddi)
-glimpse(data)
-my_svy <- as_survey_design(data, weights = WTFINL)
+
 ```
+
+```{r}
+#Graph 1
+
+data |>
+  filter(FSRAWSCRA < 11 & FSRAWSCRA > 0 ) |>
+  ggplot(aes(x=FSRAWSCRA)) +
+  geom_bar(width = 1, fill = "blue") +
+   labs(
+      title = "Food Security Scores in the United States",
+      caption = "Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles,
+J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards,
+Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset]. 
+Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
+    ) +
+  xlab("Score") +
+  ylab("Count")
+
+```
+
+
+
+
+
