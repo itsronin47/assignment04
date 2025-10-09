@@ -14,7 +14,7 @@ editor_options:
 ---
 
 \vspace{0.1in}
-
+\newpage
 Data Source: [IPUMS](https://www.ipums.org/)
 
 ```{r}
@@ -31,7 +31,7 @@ data <- read_ipums_micro(ddi)
 ```
 \newpage
 
-# Graph 1
+# Graph 1: Food Security by State
 ```{r}
 #Graph 1
 
@@ -50,9 +50,10 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   ylab("Count")
 
 ```
-
+To start, we looked at the number of respondents across all states who have every food security score. Food security scores span from 1-10. Respondents with larger scores are more food insecure. The graph reflects what we would expect by trending downward as scores grow higher, indicating that fewer people are lacking in all food security measures but many are lacking in at least one measure.
 \newpage
-# Graph 2
+
+# Graph 2: Income by State, finding the wealthiest
 ```{r}
 #Data Visualization 2: Average Family Income by State Among Wealthiest States
 avg_faminc <- data |>
@@ -76,12 +77,11 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   )
 
 ```
-
-This graph identifies the 7 wealthiest states based on average family income. Each point has the number state on top of it, so we can identify which 7 states are the wealthiest. We will use the FIPS codes of those states to inform our next visualization.
+We then grew curious of how the wealthiest states fared in terms of food security scores, so we decided to identify the wealthiest states so we could analyze them further. This graph identifies the 7 wealthiest states based on average family income. Each point has the number state on top of it, so we can identify which 7 states are the wealthiest and use their FIPS codes to inform our next visualization.
 \newpage
 
 
-# Graph 3
+# Graph 3: Food Security by the Wealthiest States
 ```{r}
 #Data Visualization 3: 
 rich_state_codes <- c(9, 24, 27, 33, 34, 44, 49)
@@ -100,9 +100,9 @@ geom_col(fill="pink") +
   color = "magenta", size = 1) +
   labs(
     title = "Number of Respondents in the 7 Wealthiest States with
-    a Food Insecurity Score of 10",
+    a Food Security Score of 10",
     x = "State Code",
-    y = "Food Insecurity Score",
+    y = "Food Security Score",
      caption = "Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles,
 J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards,
 Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset]. 
@@ -110,10 +110,10 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   )
 
 ```
-This chart shows how many respondents with food insecurity score of 10 each of the 7 wealthiest states has. The dotted line shows, by comparison, the average number of respondents with a food insecurity score of 10 across all other states in the US.
+Once we identified the 7 wealthiest states by average family income, we used this graph to see how many of each state's respondents had a food security score of 10, the highest score. By comparison, the dotted line shows the average number of respondents per state with a food security score of 10 across all states in the US. 
 \newpage
 
-# Graph 4
+# Graph 4: Calculated Percentage of Respondents
 ```{r}
 #Total respondents by state
 tibble1 <- data |>
@@ -135,7 +135,7 @@ geom_line(aes(x = rich_state_codes, y = percents, color = percents)) +
 geom_text(aes(x = rich_state_codes, y = percents,
       label = scales::percent(percents)), vjust = -0.5, size = 3) +
   labs(
-    title = "Percent of Respondents with Food Insecurity Score = 10",
+    title = "Percent of Respondents with Food Security Score = 10",
     subtitle = "Among 7 Wealthiest States",
     caption = "Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles,
 J. Robert Warren, Daniel Backman, Annie Chen, Grace Cooper, Stephanie Richards,
@@ -147,4 +147,5 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
     name =  "States by their FIPS Code") +
   scale_y_continuous(name = "Percentage of Respondents")
 ```
+While the number of respondents per state with a food security score of 10 (displayed in the previous graph) is a helpful metric, different states have different amounts of respondents, so the comparison is harder to gauge. Thus, in the line graph above, we calculated the percentage of respondents per state that had a food security score of 10. We also changed the states' FIPS codes into state name acronyms for identification. We can see that Minnesota has the largest percentage of resondents with a food security score of 10, at 0.3%. Utah has the lowest percentage of respondents with a food security score of 10, which aligns with it being the state with the highest average household income. We did notice, however, that the 7 wealthiest states appeared to have a lower number of respondents compared to other states. This potential caveat would be worth exploring if we were to continue this analysis.
 
