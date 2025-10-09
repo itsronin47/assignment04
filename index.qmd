@@ -49,7 +49,27 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
 
 ```
 
+```{r}
+#Data Visualization 2: Average Family Income by State Among Wealthiest States
+avg_faminc <- data |>
+  group_by(STATEFIP) |>
+  summarize(avg_faminc = mean(FAMINC, na.rm = TRUE)) |>
+  filter(avg_faminc >=785) |>
+mutate(
+    STATEFIP = as.numeric(STATEFIP))
 
+ggplot(avg_faminc, aes(x = STATEFIP, y = avg_faminc)) +
+  geom_point(color = "blue", size = 3, shape = 18) +
+  geom_text(aes(label = STATEFIP), vjust = -0.5, size = 3) + 
+  labs (
+    title = "Average Family Income by State Among Wealthiest States",
+    x = "State Code",
+    y = "Average Family Income"
+  )
+  
+#Written interpretation: This graph identifies the 7 wealthiest states based on average family income. Each point has the number state on top of it, so we can identify which 7 states are the wealthiest. We will use the FIPS codes of those states to inform our next visualization.
+
+```
 
 
 
