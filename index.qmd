@@ -72,4 +72,28 @@ ggplot(avg_faminc, aes(x = STATEFIP, y = avg_faminc)) +
 ```
 
 
+```{r}
+#Data Visualization 3: Number of Respondents in the 7 Wealthiest States with Highest Food Insecurity Score
+rich_state_codes <- c(9, 24, 27, 33, 34, 44, 49)
+avg_fsrawscra <- data |>
+  group_by(STATEFIP) |>
+  summarize(num_10 = sum(FSRAWSCRA == 10, na.rm = TRUE)) |>
+  summarize(avg_num_10 = mean(num_10)) |> 
+  pull(avg_num_10)
 
+data |>
+filter(FSRAWSCRA == 10, STATEFIP %in% rich_state_codes) |>
+  mutate(STATEFIP = as.numeric(STATEFIP)) |> 
+  ggplot(aes(x = factor(STATEFIP), y = FSRAWSCRA, alpha = 0.2)) +
+geom_col(fill="pink") +
+  geom_hline(yintercept = avg_fsrawscra, linetype = "dotted", color = "magenta", size = 1) +
+  labs(
+    title = "Number of Respondents in the 7 Wealthiest States with a Food Insecurity Score of 10",
+    x = "State Code",
+    y = "Food Insecurity Score"
+  )
+
+
+#Written interpretation: This chart shows how many respondents with food insecurity score of 10 each of the 7 wealthiest states has. The dotted line shows, by comparison, the average number of respondents with a food insecurity score of 10 across all other states in the US.
+
+```
