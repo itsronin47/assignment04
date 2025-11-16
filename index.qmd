@@ -45,7 +45,8 @@ Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset].
 Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
     ) +
   xlab("Score") +
-  ylab("Count")
+  ylab("Count") +
+  annotate("text", x = 5, y = 150, label = "December 2022-24", color = "red", size = 5)
 
 ```
 To start, we looked at the number of respondents across all states who have every food security score. Food security scores span from 1-10. Respondents with larger scores are more food insecure. The graph reflects what we would expect by trending downward as scores grow higher, indicating that fewer people are lacking in all food security measures but many are lacking in at least one measure.
