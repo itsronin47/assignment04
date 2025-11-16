@@ -25,7 +25,7 @@ library(haven)
 ```{r}
 ddi <- read_ipums_ddi("data/cps_00004.xml")
 data <- read_ipums_micro(ddi)
-
+#I am making a change to my code, Hi Aaron! How about them Pacer's huh
 ```
 \newpage
 
