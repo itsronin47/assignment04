@@ -45,7 +45,8 @@ Megan Schouweiler, and Michael Westberry. IPUMS CPS Version 12.0 [dataset].
 Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
     ) +
   xlab("Score") +
-  ylab("Count")
+  ylab("Count") +
+  annotate("text", x = 5, y = 150, label = "December 2022-24", color = "red", size = 5)
 
 ```
 To start, we looked at the number of respondents across all states who have every food security score. Food security scores span from 1-10. Respondents with larger scores are more food insecure. The graph reflects what we would expect by trending downward as scores grow higher, indicating that fewer people are lacking in all food security measures but many are lacking in at least one measure.
@@ -146,4 +147,14 @@ Minneapolis, MN: IPUMS, 2024. https://doi.org/10.18128/D030.V12.0"
   scale_y_continuous(name = "Percentage of Respondents")
 ```
 While the number of respondents per state with a food security score of 10 (displayed in the previous graph) is a helpful metric, different states have different amounts of respondents, so the comparison is harder to gauge. Thus, in the line graph above, we calculated the percentage of respondents per state that had a food security score of 10. We also changed the states' FIPS codes into state name acronyms for identification. We can see that Minnesota has the largest percentage of resondents with a food security score of 10, at 0.3%. Utah has the lowest percentage of respondents with a food security score of 10, which aligns with it being the state with the highest average household income. We did notice, however, that the 7 wealthiest states appeared to have a lower number of respondents compared to other states. This potential caveat would be worth exploring if we were to continue this analysis.
+
+
+## Stretch Assignment
+When I try to git add my data, I get this message: 
+Ronins-MacBook-Air:assignment04 ronin$ git add data/
+The following paths are ignored by one of your .gitignore files:
+data
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false"
 
